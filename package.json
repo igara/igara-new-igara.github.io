@@ -1,0 +1,15 @@
+{
+  "name": "igara.github.io",
+  "private": false,
+  "packageManager": "bun@1.0.30",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "bun run app:dev",
+    "app:dev": "(cd packages/app && bun run dev)",
+    "app:build": "(cd packages/app && bun run build)",
+    "app:lint": "(cd packages/app && bun run lint)",
+    "app:fix:lint": "(cd packages/app && next lint --fix)"
+  }
+}
